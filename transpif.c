@@ -24,6 +24,7 @@ int main(int argc, char **argv){
 	float *AT = (float *) malloc(matrix_width*matrix_height*sizeof(float));
 	srand(time(NULL));
 /*
+	//input matrix creation
 	printf("input matrix\n");
 	for(int i=0; i<matrix_height*matrix_width; i++){
 		if((i!=0) && (i%matrix_width == 0)){
@@ -36,6 +37,7 @@ int main(int argc, char **argv){
 	}
 	printf("\n\n");
 */
+	//transpose the thing
 	struct timeval start, end;
 	gettimeofday(&start, NULL);
 	printf("Start Time: %ld\n", (start.tv_sec * 1000000 + start.tv_usec));
@@ -64,6 +66,7 @@ int main(int argc, char **argv){
 		  - (start.tv_sec * 1000000 + start.tv_usec));
 	printf("Time Difference in MicroSeconds: %ld\n\n", difference);
 /*
+	//print output matrix
 	printf("transposed matrix\n");
 	for(int i=0; i<matrix_height*matrix_width; i++){
 		if((i!=0) && (i%matrix_height == 0)){
