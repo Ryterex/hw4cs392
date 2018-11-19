@@ -23,6 +23,7 @@ int main(int argc, char **argv){
 	float *AT = (float *) malloc(matrix_size*matrix_size*sizeof(float));
 	srand(time(NULL));
 /*
+	//make and print the input matrix
 	printf("input matrix\n");
 	for(int i=0; i<matrix_size*matrix_size; i++){
 		if((i!=0) && (i%matrix_size == 0)){
@@ -59,6 +60,7 @@ int main(int argc, char **argv){
 	//float elems = matrixx * matrixx;
 
 /*
+	//print output matrix
 	printf("transposed matrix\n");
 	for(int i=0; i<matrix_size*matrix_size; i++){
 		if((i!=0) && (i%matrix_size == 0)){
